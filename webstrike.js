@@ -10,4 +10,5 @@ $(document).ready(function() {
 		loop: false,
 		responsiveFallback: false
 	});
+	alert('Webstrike JS is working');
 });
