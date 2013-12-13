@@ -24,6 +24,10 @@ $(document).ready(function() {
 	$('section#welcome a').click(function() {
 		$('body').moveDown();
 	});
+
+	$('section#welcome img').click(function() {
+		$('body').moveDown();
+	});
 });
 
 $(window).resize(function() {

@@ -101,6 +101,7 @@ section#welcome img {
 	min-width: 50px;
 	margin: 0 auto;
 	opacity: 0.75;
+	cursor: pointer;
 	transition: 0.125s top ease;
 	-webkit-transition: 0.125s top ease;
 }
