@@ -100,15 +100,8 @@ section#welcome img {
 	display: block;
 	min-width: 50px;
 	margin: 0 auto;
-	opacity: 0.75;
+	opacity: 1;
 	cursor: pointer;
-	transition: 0.125s top ease;
-	-webkit-transition: 0.125s top ease;
-}
-
-section#welcome img:hover {
-	position: relative;
-	top: 2px;
 }
 
 /*
