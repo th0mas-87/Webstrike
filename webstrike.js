@@ -14,4 +14,5 @@ $(document).ready(function() {
 	$('section#welcome h1').fitText(0.75);
 	$('section#welcome h2').fitText(2);
 	$('section#welcome h3').fitText(6.75);
+	$('section#welcome a').fitText(0.75);
 });

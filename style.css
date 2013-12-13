@@ -87,6 +87,25 @@ section#welcome h3 {
 	text-transform: uppercase;
 }
 
+section#welcome a {
+	display: block;
+	color: #7f8c8d;
+	width: 17.5%;
+	font-weight: 300;
+	padding: 0.5em;
+	margin: 1.5em auto;
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid #7f8c8d;
+	cursor: pointer;
+	transition: 0.5s background-color ease;
+	-webkit-transition: 0.5s background-color ease;
+}
+
+section#welcome a:hover {
+	background-color: #233140;
+}
+
 /*
 END Welcome Section CSS
 */
