@@ -1,5 +1,11 @@
 
 $(document).ready(function() {
+	$('section').css('height', $(window).height() + 'px');
+	$('section#welcome h1').fitText(0.75);
+	$('section#welcome h2').fitText(2);
+	$('section#welcome h3').fitText(6.75);
+	$('section#welcome a').fitText(0.75);
+	$('section#welcome div').css('padding-top', ($(window).height() - $('section#welcome div').height()) / 2 + 'px');
 	$('body').onepage_scroll({
 		sectionContainer: 'section',
 		easing: 'ease',
@@ -11,8 +17,9 @@ $(document).ready(function() {
 		loop: false,
 		responsiveFallback: false
 	});
-	$('section#welcome h1').fitText(0.75);
-	$('section#welcome h2').fitText(2);
-	$('section#welcome h3').fitText(6.75);
-	$('section#welcome a').fitText(0.75);
+});
+
+$(window).resize(function() {
+	$('section').css('height', $(window).height() + 'px');
+	$('section#welcome div').css('padding-top', ($(window).height() - $('section#welcome div').height()) / 2 + 'px');
 });
