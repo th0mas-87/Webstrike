@@ -121,8 +121,8 @@ section.white {
 
 section.white h1 {
 	width: 100%;
-	margin: 0.75em 0;
-  margin-bottom: 0.375em;
+	margin: 0.5em 0;
+  margin-bottom: 0.25em;
 	color: #2980b9;
 	font-weight: 300;
 	text-align: center;
@@ -134,7 +134,7 @@ section.white p {
 	width: 70%;
   font-weight: 300;
   text-align: center;
-	margin: 0.75em auto;
+	margin: 0.5em auto;
 }
 
 section.white p span {
@@ -212,8 +212,40 @@ END Welcome Section CSS
 About Section CSS
 */
 
-section#about p:last-child {
+section#about div#services {
+  width: 85%;
+  padding: 0 10%;
+}
+
+section#about div#services div {
+  display: inline-block;
+  width: 22.5%;
+  padding: 0 1.25%;
+  vertical-align: top;
+}
+
+section#about div#services img {
+  display: block;
   width: 50%;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+section#about div#services h3 {
+  width: 100%;
+  margin: 0.5em 0;
+  color: #2980b9;
+  font-weight: 400;
+  text-align: center;
+}
+
+section#about div#services span {
+  display: block;
+  color: #7f8c8d;
+  width: 100%;
+  font-weight: 300;
+  text-align: center;
+  word-wrap: break-word;
 }
 
 /*
