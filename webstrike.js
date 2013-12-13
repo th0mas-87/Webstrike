@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	$('section').css('height', $(window).height() + 'px');
 	$('section.white h1').fitText(1.75);
-	$('section.white p').fitText(3);
+	$('section.white p').fitText(3.5);
 	$('section#welcome h1').fitText(0.75);
 	$('section#welcome h2').fitText(2);
 	$('section#welcome h3').fitText(6.75);
