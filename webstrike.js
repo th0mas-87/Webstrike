@@ -17,6 +17,10 @@ $(document).ready(function() {
 		loop: false,
 		responsiveFallback: false
 	});
+
+	$('section#welcome a').click(function() {
+		$('body').moveDown();
+	});
 });
 
 $(window).resize(function() {
