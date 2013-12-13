@@ -111,6 +111,10 @@ body {
 	font-size: 18px;
 }
 
+abbr {
+  border-bottom: 1px #ddd dotted;
+}
+
 section {
 	overflow: hidden;
 }
