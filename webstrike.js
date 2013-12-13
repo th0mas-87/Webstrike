@@ -6,6 +6,9 @@ $(document).ready(function() {
 	$('section#welcome h3').fitText(6.75);
 	$('section#welcome a').fitText(0.75);
 	$('section#welcome div').css('padding-top', ($(window).height() - $('section#welcome div').height()) / 2 + 'px');
+	$('section#welcome img').css('width', $(window).width() / 20 + 'px');
+	$('section#welcome img').css('height', $(window).height() / 20 + 'px');
+	$('section#welcome img').css('padding-top', ($(window).height() - $('section#welcome div').outerHeight()) - $(window).height() / 20 * 2.75 + 'px');
 	$('body').onepage_scroll({
 		sectionContainer: 'section',
 		easing: 'ease',
@@ -26,4 +29,7 @@ $(document).ready(function() {
 $(window).resize(function() {
 	$('section').css('height', $(window).height() + 'px');
 	$('section#welcome div').css('padding-top', ($(window).height() - $('section#welcome div').height()) / 2 + 'px');
+	$('section#welcome img').css('width', $(window).width() / 20 + 'px');
+	$('section#welcome img').css('height', $(window).height() / 20 + 'px');
+	$('section#welcome img').css('padding-top', ($(window).height() - $('section#welcome div').outerHeight()) - $(window).height() / 20 * 2.75 + 'px');
 });

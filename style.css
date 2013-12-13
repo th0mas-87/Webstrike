@@ -96,6 +96,20 @@ section#welcome a:hover {
 	background-color: #233140;
 }
 
+section#welcome img {
+	display: block;
+	min-width: 50px;
+	margin: 0 auto;
+	opacity: 0.75;
+	transition: 0.125s top ease;
+	-webkit-transition: 0.125s top ease;
+}
+
+section#welcome img:hover {
+	position: relative;
+	top: 2px;
+}
+
 /*
 END Welcome Section CSS
 */
