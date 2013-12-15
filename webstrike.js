@@ -1,8 +1,8 @@
 
 $(document).ready(function() {
 	$('section').css('height', $(window).height() + 'px');
-	$('section.white h1').fitText(1.75);
-	$('section.white p').fitText(4);
+	$('section.white div#content h1').fitText(1.75);
+	$('section.white div#content p').fitText(4);
 	$('section#welcome h1').fitText(0.75);
 	$('section#welcome h2').fitText(2);
 	$('section#welcome h3').fitText(6.75);
@@ -16,9 +16,11 @@ $(document).ready(function() {
 	$('section#approach h1').fitText(1.25);
 	$('section#approach h2').fitText(4.5);
 	$('section#approach div').css('padding-top', ($(window).height() - $('section#approach div').height()) / 2 + 'px');
-	$('section.white').css('height', $('section.white div#content').height() + 'px');
-	$('section.white').css('padding-top', ($(window).height() - $('section.white div#content').height()) / 4);
-	$('section.white').css('padding-bottom', ($(window).height() - $('section.white div#content').height()) / 4 * 3);
+	$('section#about div#content').css('padding-top', ($(window).height() - $('section#about div#content').height()) / 4 + 'px');
+	$('section#work div#slideshow h1').fitText(1.75);
+	$('section#work div#slideshow h2').fitText(3.75);
+	$('section#work div#slideshow').css('height', ($(window).height() - $('section#work div#content').height()) - $(window).height() / 20 + 'px');
+	$('section#work div#slideshow').css('padding-top', $(window).height() / 20 + 'px');
 	$('div#main').onepage_scroll({
 		sectionContainer: 'section',
 		easing: 'ease',
@@ -29,6 +31,13 @@ $(document).ready(function() {
 		afterMove: function(index) {},
 		loop: false,
 		responsiveFallback: false
+	});
+	$('.banner').unslider({
+		speed: 500,
+		delay: 3000,
+		keys: true,
+		dots: true,
+		fluid: false
 	});
 
 	$('section#welcome a').click(function() {
@@ -47,6 +56,7 @@ $(window).resize(function() {
 	$('section#welcome img').css('height', $(window).height() / 20 + 'px');
 	$('section#welcome img').css('padding-top', ($(window).height() - $('section#welcome div').outerHeight()) - $(window).height() / 20 * 2.75 + 'px');
 	$('section#approach div').css('padding-top', ($(window).height() - $('section#approach div').height()) / 2 + 'px');
-	$('section.white').css('padding-top', ($(window).height() - $('section.white div#content').height()) / 4);
-	$('section.white').css('padding-bottom', ($(window).height() - $('section.white div#content').height()) / 4 * 3);
+	$('section#about div#content').css('padding-top', ($(window).height() - $('section#about div#content').height()) / 4 + 'px');
+	$('section#work div#slideshow').css('height', ($(window).height() - $('section#work div#content').height()) - $(window).height() / 20 + 'px');
+	$('section#work div#slideshow').css('padding-top', $(window).height() / 20 + 'px');
 });

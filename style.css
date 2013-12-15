@@ -1,6 +1,6 @@
 
 /*
-One Page Scroll CSS
+One Page Scroll / Unslider CSS
 */
 
 body, html {
@@ -98,8 +98,21 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   position: inherit;
 }
 
+.banner {
+  position: relative;
+  overflow: auto;
+}
+
+.banner li {
+  list-style: none;
+}
+
+.banner ul li {
+  float: left;
+}
+
 /*
-END One Page Scroll CSS 
+END One Page Scroll / Unslider CSS 
 
 ------------------------------------------------------------------------------------------------------------
 
@@ -282,4 +295,48 @@ section#approach h2 {
 
 /*
 END Approach Section CSS
+
+------------------------------------------------------------------------------------------------------------
+
+Work Section CSS
+*/
+
+section#work .banner {
+  min-height: 100%;
+}
+
+section#work .banner ul {
+  min-height: 100%;
+  padding: 0;
+}
+
+section#work .banner li {
+  text-align: center;
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+section#work .banner h1 {
+  color: #2c3e50;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section#work .banner h2 {
+  color: #2980b9;
+  font-weight: 300;
+}
+
+section#work .banner h2 span {
+  color: #7f8c8d;
+}
+
+section#work .banner .dots {
+  position: absolute;
+  
+}
+
+/*
+END Work Section CSS
 */
